@@ -10,7 +10,7 @@ class Base(DeclarativeBase):
 
 
 # declaring basemodel
-class BaseModel(Base):
+class BaseDatabase(Base):
     __abstract__ = True
 
     created_at: Mapped[datetime] = mapped_column(
